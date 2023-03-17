@@ -8,7 +8,7 @@ function NewCamper({ onAddCamper }) {
   function handleSubmit(e) {
     e.preventDefault();
     const formData = {
-      name,
+      name: name,
       age: Number(age),
     };
     fetch("/campers", {
